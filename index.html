@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Css-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container-fluid m-5 p-5 bg-white">
+      <div class="row">
+        <div class="col col-12 col-lg-6">
+          <h1 class="fs-6 fw-semibold text-uppercase">Mejora tu pizza</h1>
+          <p class="lh-sm">
+            Puedes elegir 3 ingredientes gratis. Cada ingrediente adicional
+            cuesta $800 pesos cada uno
+          </p>
+
+          <p>Ingredientes disponibles para agregar a su pizza:</p>
+
+          <ul class="ingredientes mb-3" id="ingredientes"></ul>
+
+          <p>Los ingredientes seleccionados son:</p>
+          <p id="ingredientesSeleccionados"></p>
+
+          <p>Los ingredientes <b>extras</b> seleccionados son:</p>
+          <p id="ingredientesExtrasSeleccionados"></p>
+        </div>
+        <div class="col col-12 col-lg-6">
+          <h2 class="fs-6 fw-semibold text-uppercase">Resumen del pedido</h2>
+
+          <ul class="list-group list-group-flush">
+            <li
+              class="list-group-item fw-bold d-flex align-items-center justify-content-between"
+            >
+              <span class="text-secondary my-2">Pizza XL</span>
+              <span>$15.000</span>
+            </li>
+            <li
+              class="list-group-item fw-bold d-flex align-items-center justify-content-between"
+            >
+              <span class="text-secondary my-2">Ingredientes Extras</span>
+              <span id="extrasPrecio"></span>
+            </li>
+            <li
+              class="list-group-item fw-bold d-flex align-items-center justify-content-between"
+            >
+              <span class="text-secondary my-2">Propina</span>
+              <span id="propinaPrecio"></span>
+            </li>
+            <li class="list-group-item">
+              <form class="border rounded-pill p-1 my-2" id="formPropina">
+                <div class="row">
+                  <div class="col col-12 col-md-6">
+                    <input
+                      type="number"
+                      class="form-control border-0 rounded-pill"
+                      id="propina"
+                      placeholder="Ingrese su propina"
+                    />
+                  </div>
+                  <div class="col col-12 col-md-6">
+                    <button
+                      type="submit"
+                      class="btn btn-dark rounded-pill w-100"
+                    >
+                      Enviar Pedido con Propina
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!--Js-->
+    <script src="assets/js/script.js"></script>
+    <!--Bootstrap Js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </body>
+</html>

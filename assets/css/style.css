@@ -1,0 +1,29 @@
+:root {
+  --green: #265d09;
+  --red: #d42124;
+  --gray: #353535;
+  --grayLight: #9d9fa5;
+}
+
+body {
+  background: #265d09;
+  background: linear-gradient(to right, #265d09, #d42124);
+  background: -webkit-linear-gradient(to right, #265d09, #d42124);
+
+  min-height: 100vh;
+  max-width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.ingredientes {
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  #formPropina {
+    border: unset !important;
+  }
+}
